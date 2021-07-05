@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home - Samuel Medical Center</title>
+	<link rel="shortcut icon" href="img/LOGO.png"/>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+	<link rel="icon" href="img/logo.png" type="image/icon type">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="index" id="left-nav">
+			<img src="img/logo-name.png" class="left-nav-logo">
+		</a>
+		<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+		<a href="contact">CONTACT</a>
+		<a href="services">SERVICES</a>
+		<a href="about">ABOUT US</a>
+		<a id="current-page" href="index">HOME</a>
+	</div>
+
+	<img src="img/front-page.jpeg" id="front-page-photo">
+
+	<div id="alert">
+		<p class="paragraph-title"> Coronavirus <img src="img/attention-sign.png" class="attention-sign"></p>
+		<p class="centered-paragraph" style="color: #ffffff;
+	text-shadow: 1px 1px black; text-align: left;
+	text-indent: 40px;">
+			At Samuel Medical Center, our patients, families, employees, and visitors' safety is our highest priority.  We take numerous precautions to keep our clinic safe, including but not limited to: constant sanitization, social distancing, and detailed screening of everyone entering and exiting.  We take this global pandemic very seriously and can guarantee our best effort in protecting your health and safety.
+		</p>
+	</div>
+
+	<h1 class="mini-header" style="margin-top: 60px;">Schedule a Visit</h1>
+
+	<div class="twobox-container">
+		<div class="twobox">
+			<h1 class="mini-header" style="font-size: 20px; margin-top:40px;">Phone</h1>
+			<p class="big-contact">213-388-1111</p>
+			<p class="centered-paragraph">Monday-Friday: 7am-4pm<br>
+			Appointments Only</p>
+		</div>
+		<div class="twobox">
+			<h1 class="mini-header" style="font-size: 20px; margin-top:40px;">Email</h1>
+			<p class="big-contact">mdofficemail@gmail.com</p>
+			<p class="centered-paragraph">Available anytime</p>
+		</div>
+	</div>
+
+	<h1 class="mini-header" style="margin-top: 80px; margin-bottom: 40px">Why Samuel Medical Center?</h1>
+
+	<p class="centered-paragraph" style="text-align: left; margin-bottom: 100px;">
+		Lorem ipsum dolor sit amet, at nam mazim mundi, voluptua iudicabit ius at. Evertitur argumentum nec in, integre dolores qui at. Eu nam partem suscipiantur, no duo soluta semper moderatius, cum veri graeci principes ut. Vel discere phaedrum urbanitas in, mea mazim electram ei. Sit ad illud labores atomorum.
+		<br><br>
+		Lorem ipsum dolor sit amet, at nam mazim mundi, voluptua iudicabit ius at. Evertitur argumentum nec in, integre dolores qui at. Eu nam partem suscipiantur, no duo soluta semper moderatius, cum veri graeci principes ut. Vel discere phaedrum urbanitas in, mea mazim electram ei. Sit ad illud labores atomorum.
+	</p>
+
+</body>
+
+<footer>
+	<div class="twobox-container-footer">
+		<div class="twobox" style="background-color: transparent; box-shadow: none; margin: 0; height: 100px; width: 300px;">
+			<p class="footer-info-left">266 S Harvard Blvd Ste 110<br>Los Angeles, CA, 90004</p>
+		</div>
+		<div class="twobox" style="background-color: transparent; box-shadow: none; margin: 0; height: 100px; width: 300px;">
+			<div class="logo-row">
+				<a class="logolink" href="mailto:mdofficemail@gmail.com">
+					<div class="circle">
+						<img id="emaillogo" style="margin-top: 12px" src="img/emaillogo.png">
+					</div>
+				</a>
+
+				<a class="logolink" href="tel:213-388-1111">
+					<div class="circle">
+						<img id="phonelogo" style="width: 35px; height: 35px;"src="img/phonelogo.png">
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<p class="footer-info-last">&copy; Copyright 2020 Dr. Samuel Medical Center</p>
+</footer>
+
+<script>
+	function toggleNav() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+    		x.className += " responsive";
+    		document.getElementById("left-nav").style.width = "100%";
+  		} else {
+    		x.className = "topnav";
+    		document.getElementById("left-nav").style.width = null;
+  		}
+	}
+</script>
+
+
+</html>

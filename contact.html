@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us - Samuel Medical Center</title>
+	<link rel="shortcut icon" href="img/LOGO.png"/>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+	<link rel="icon" href="img/logo.png" type="image/icon type">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="index" id="left-nav">
+			<img src="img/logo-name.png" class="left-nav-logo">
+		</a>
+		<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+		<a id="current-page" href="contact">CONTACT</a>
+		<a href="services">SERVICES</a>
+		<a href="about">ABOUT US</a>
+		<a href="index">HOME</a>
+	</div>
+	<br>
+	<div class="background-color-blue">
+		<h1 class="page-title">Contact Us</h1>
+	</div>
+
+	<div id="contact-border">
+		<div id="contact-div">
+			<form>
+				<br><br>
+				<h3 class="mini-header" style="color: #db3c2e; margin-bottom: 50px; margin-top: 100px;">Send us a message!</h3>
+				<br><br><br>
+				<input autocomplete="off" autocorrect="off" spellcheck="false" type="text" id="name" class="inputs" placeholder="Your Name">
+				<input autocomplete="off" autocorrect="off" spellcheck="false" type="text" id="subject" class="inputs" placeholder="Subject">
+				<textarea autocomplete="off" autocorrect="off" spellcheck="false" id="txt" placeholder="Your Message"></textarea>
+				<div id="submit-wrapper" style="margin-top: 40px;">
+					<input type="submit" id="submitbutton" value="Submit">
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+
+<footer>
+	<div class="twobox-container-footer">
+		<div class="twobox" style="background-color: transparent; box-shadow: none; margin: 0; height: 100px; width: 300px;">
+			<p class="footer-info-left">266 S Harvard Blvd Ste 110<br>Los Angeles, CA, 90004</p>
+		</div>
+		<div class="twobox" style="background-color: transparent; box-shadow: none; margin: 0; height: 100px; width: 300px;">
+			<div class="logo-row">
+				<a class="logolink" href="mailto:mdofficemail@gmail.com">
+					<div class="circle">
+						<img id="emaillogo" style="margin-top: 12px" src="img/emaillogo.png">
+					</div>
+				</a>
+
+				<a class="logolink" href="tel:213-388-1111">
+					<div class="circle">
+						<img id="phonelogo" style="width: 35px; height: 35px;"src="img/phonelogo.png">
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<p class="footer-info-last">&copy; Copyright 2020 Samuel Medical Center</p>
+</footer>
+
+<script>
+	document.getElementById("submitbutton").addEventListener("click", submit);
+	function toggleNav() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+    		x.className += " responsive";
+    		document.getElementById("left-nav").style.width = "100%";
+  		} else {
+    		x.className = "topnav";
+    		document.getElementById("left-nav").style.width = null;
+  		}
+	}
+
+	function submit() {
+		var name = document.getElementById("name").value;
+		var subject = document.getElementById("subject").value;
+		var body = document.getElementById("txt").value;
+		window.location.href = "mailto:mdofficemail@gmail.com?subject="+subject+"&body=Hi, my name is "+name+". Here is my message from the Samuel Medical Center Website%3A %0D%0A %0D%0A"+body;
+	}
+</script>
+
+
+</html>

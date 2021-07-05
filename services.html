@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Services - Samuel Medical Center</title>
+	<link rel="shortcut icon" href="img/LOGO.png"/>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+	<link rel="icon" href="img/logo.png" type="image/icon type">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="index" id="left-nav">
+			<img src="img/logo-name.png" class="left-nav-logo">
+		</a>
+		<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+		<a href="contact">CONTACT</a>
+		<a id="current-page" href="services">SERVICES</a>
+		<a href="about">ABOUT US</a>
+		<a href="index">HOME</a>
+	</div>
+	<br>
+	<div class="background-img-services">
+		<h1 class="page-title">Services</h1>
+	</div>
+
+	<h1 class="mini-header">Here's what we can do for you</h1>
+	<div class="services-row">
+		<div class="servicecard">
+			<img src="img/service-card.jpg" alt="Service-Name" class="servicecard-photo">
+			<h3 class="servicecard-title">Service 1</h3>
+		</div>
+		<div class="servicecard">
+			<img src="img/service-card.jpg" alt="Service-Name" class="servicecard-photo">
+			<h3 class="servicecard-title">Service 2</h3>
+		</div>
+		<div class="servicecard">
+			<img src="img/service-card.jpg" alt="Service-Name" class="servicecard-photo">
+			<h3 class="servicecard-title">Service 3</h3>
+		</div>
+	</div>
+
+</body>
+
+<footer>
+	<div class="twobox-container-footer">
+		<div class="twobox" style="background-color: transparent; box-shadow: none; margin: 0; height: 100px; width: 300px;">
+			<p class="footer-info-left">266 S Harvard Blvd Ste 110<br>Los Angeles, CA, 90004</p>
+		</div>
+		<div class="twobox" style="background-color: transparent; box-shadow: none; margin: 0; height: 100px; width: 300px;">
+			<div class="logo-row">
+				<a class="logolink" href="mailto:mdofficemail@gmail.com">
+					<div class="circle">
+						<img id="emaillogo" style="margin-top: 12px" src="img/emaillogo.png">
+					</div>
+				</a>
+
+				<a class="logolink" href="tel:213-388-1111">
+					<div class="circle">
+						<img id="phonelogo" style="width: 35px; height: 35px;"src="img/phonelogo.png">
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<p class="footer-info-last">&copy; Copyright 2020 Dr. Samuel Medical Center</p>
+</footer>
+
+<script>
+	function toggleNav() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+    		x.className += " responsive";
+    		document.getElementById("left-nav").style.width = "100%";
+  		} else {
+    		x.className = "topnav";
+    		document.getElementById("left-nav").style.width = null;
+  		}
+	}
+</script>
+
+
+</html>
