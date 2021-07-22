@@ -1,0 +1,13 @@
+Samuel Medical Center Colors:
+#000080 - logo blue
+#264f87 - other blue
+#386eb8 - light blue
+#ecb445 - yellow
+#cd7a2c - orange
+
+Gradients:
+#2 Blue Preset
+#2 Orange Preset
+#6 Orange Preset
+#22 Green Preset
+#23 Green Preset
