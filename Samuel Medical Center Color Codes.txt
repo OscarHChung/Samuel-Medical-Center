@@ -4,10 +4,3 @@ Samuel Medical Center Colors:
 #386eb8 - light blue
 #ecb445 - yellow
 #cd7a2c - orange
-
-Gradients:
-#2 Blue Preset
-#2 Orange Preset
-#6 Orange Preset
-#22 Green Preset
-#23 Green Preset

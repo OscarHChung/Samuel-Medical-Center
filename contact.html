@@ -4,18 +4,19 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact Us - Samuel Medical Center</title>
-	<link rel="shortcut icon" href="img/LOGO.png"/>
+	<link rel="shortcut icon" href="img/logo-official.jpg"/>
 	<link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
-	<link rel="icon" href="img/logo.png" type="image/icon type">
+	<link rel="icon" href="img/logo-official.jpg" type="image/icon type">
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="topnav" id="myTopnav">
 		<a href="index" id="left-nav">
-			<img src="img/logo-name.png" class="left-nav-logo">
+			<img src="img/logo-official.jpg" class="left-nav-logo">
 		</a>
+		<a href="index" id="left-nav-link">Samuel Medical Center</a>
 		<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
-		<a id="current-page" href="contact">CONTACT</a>
+		<a href="contact" id="current-page">CONTACT</a>
 		<a href="services">SERVICES</a>
 		<a href="about">ABOUT US</a>
 		<a href="index">HOME</a>
@@ -29,7 +30,7 @@
 		<div id="contact-div">
 			<form>
 				<br><br>
-				<h3 class="mini-header" style="color: #db3c2e; margin-bottom: 50px; margin-top: 100px;">Send us a message!</h3>
+				<h3 class="mini-header" style="color: #fd644f; margin-bottom: 50px; margin-top: 100px;">Send us a message!</h3>
 				<br><br><br>
 				<input autocomplete="off" autocorrect="off" spellcheck="false" type="text" id="name" class="inputs" placeholder="Your Name">
 				<input autocomplete="off" autocorrect="off" spellcheck="false" type="text" id="subject" class="inputs" placeholder="Subject">
@@ -85,7 +86,7 @@
 		var name = document.getElementById("name").value;
 		var subject = document.getElementById("subject").value;
 		var body = document.getElementById("txt").value;
-		window.location.href = "mailto:mdofficemail@gmail.com?subject="+subject+"&body=Hi, my name is "+name+". Here is my message from the Samuel Medical Center Website%3A %0D%0A %0D%0A"+body;
+		window.location.href = "mailto:mdofficemail@gmail.com?subject="+subject+"&body=Message from the Samuel Medical Center Website%3A %0D%0A"+body+"%0D%0A %0D%0A"+name;
 	}
 </script>
 
