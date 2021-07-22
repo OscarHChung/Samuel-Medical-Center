@@ -124,7 +124,7 @@ body {
 	text-align: center;
 	color: #536169;
 	width: 75%;
-	margin: 0 12.5% 0 12.5%;
+	margin: 10px 12.5% 0 12.5%;
 }
 .staff-paragraph {
 	text-align: right; 
@@ -323,11 +323,16 @@ footer {
 }
 .footer-info-last {
 	text-align: center; 
-	margin-top: 30px; 
+	margin-top: 140px; 
 	font-size: 16px;
 	font-family: "Lato", Helvetica, sans-serif;
 	color: #536169;
 	line-height: 40px;
+}
+.separate {
+	height: 1px;
+	background-color: black;
+	border: none;
 }
 .circle {
 	border-radius: 100%;
@@ -418,8 +423,15 @@ footer {
 	.footer-info-left {
 		text-align: center;
 	}
+	#moving-hr {
+		visibility: hidden;
+		margin-bottom: 125px;
+	}
+	#moving-logos {
+		margin-top: 125px;
+	}
 	.footer-info-last {
-		margin-top: 90px;
+		margin-top: 325px;
 	}
 	.logo-row {
 		margin: 30px 20% 0 20%;
@@ -457,7 +469,7 @@ footer {
 @media screen and (max-width: 640px) {
 	.twobox {
 		width: 300px;
-		height: 200px;
+		height: 250px;
 	}
 	.big-contact {
 		font-size: 30px;
